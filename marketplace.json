@@ -1,0 +1,15 @@
+{
+  "name": "vmuris-marketplace",
+  "owner": {
+    "name": "vmuris",
+    "url": "https://github.com/vmuris"
+  },
+  "plugins": [
+    {
+      "name": "mi-primer-plugin",
+      "source": "./plugins/mi-primer-plugin",
+      "description": "Plugin de ejemplo para Claude",
+      "version": "0.1.0"
+    }
+  ]
+}

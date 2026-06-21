@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "google-drive": {
+      "command": "node",
+      "args": ["${CLAUDE_PLUGIN_ROOT}/server/src/index.js"],
+      "env": {
+        "GOOGLE_DRIVE_CREDENTIALS_PATH": "${GOOGLE_DRIVE_CREDENTIALS_PATH}",
+        "GOOGLE_DRIVE_TOKEN_PATH": "${GOOGLE_DRIVE_TOKEN_PATH}",
+        "GOOGLE_DRIVE_SERVICE_ACCOUNT_PATH": "${GOOGLE_DRIVE_SERVICE_ACCOUNT_PATH}",
+        "GOOGLE_DRIVE_SUBJECT": "${GOOGLE_DRIVE_SUBJECT}"
+      }
+    }
+  }
+}

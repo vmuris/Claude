@@ -1,0 +1,9 @@
+{
+  "name": "google-drive-mcp",
+  "version": "1.0.0",
+  "description": "Servidor MCP con todas las funciones de Google Drive (archivos, carpetas, permisos, exportación, papelera y cuota).",
+  "author": {
+    "name": "vmuris"
+  },
+  "keywords": ["mcp", "google-drive", "drive", "files", "storage"]
+}

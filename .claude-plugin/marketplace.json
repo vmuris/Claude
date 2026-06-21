@@ -10,6 +10,12 @@
       "source": "./plugins/mi-primer-plugin",
       "description": "Plugin de ejemplo para Claude",
       "version": "0.1.0"
+    },
+    {
+      "name": "google-drive-mcp",
+      "source": "./plugins/google-drive-mcp",
+      "description": "Servidor MCP con todas las funciones de Google Drive (archivos, carpetas, permisos, exportación, papelera y cuota).",
+      "version": "1.0.0"
     }
   ]
 }

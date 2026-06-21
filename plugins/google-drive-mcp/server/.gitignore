@@ -1,0 +1,8 @@
+node_modules/
+*.log
+
+# Credenciales y tokens — NUNCA subir al repositorio
+credentials.json
+token.json
+service-account.json
+*.secret.json

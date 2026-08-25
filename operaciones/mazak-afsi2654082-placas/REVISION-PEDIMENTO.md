@@ -3,6 +3,11 @@
 
 Semáforo: 🔴 bloquea validación · 🟠 corregir antes de pagar · 🟡 verificar/documentar
 
+> **Alcance reducido (25-ago-2026).** De las 4 placas del embarque sólo se importan **2** —
+> una por factura. De la factura de la partida 1, que ampara 3 piezas, sólo entra la del
+> **lote 706332C4**; las 2 *fixture plates* quedan pendientes. Esto vuelve al conflicto de
+> lotes el problema central del pedimento: ver hallazgo 2.
+
 ---
 
 ## 🔴 Bloqueantes
@@ -17,12 +22,14 @@ herramental ya declaró en su relación de facturas ese mismo folio `CDS TEST` (
 proveedor. **Pedir a AFS/Mazak facturas con folios distintos (p. ej. `CDS TEST-1` y `CDS TEST-2`)
 y fecha 17-ago-2026** antes de transmitir COVE.
 
-**2. El lote 706332C4 aparece en las dos facturas.**
-El aviso 1931AL26073388 desglosa las 4 placas así: 1 pza lote **657231B7** (colada 558),
-2 pzas lote **660681B8** (colada 714), 1 pza lote **706332C4** (colada 714). Sin embargo,
-la línea "AMS 4027" de la Factura 1 y la única línea de la Factura 2 declaran **las dos**
-el lote 706332C4. Una de ellas está mal: debe ser 657231B7. Como el aviso ampara por lote
-y colada, la descripción del pedimento no cuadraría con el permiso. **Corregir la factura.**
+**2. Las dos únicas piezas del pedimento declaran el mismo lote 706332C4.**
+Con el alcance reducido, el pedimento queda con dos partidas de una pieza cada una y **las dos
+dicen lote 706332C4**. El aviso 1931AL26073388 desglosa las 4 placas así: 1 pza lote **657231B7**
+(colada 558), 2 pzas lote **660681B8** (colada 714), 1 pza lote **706332C4** (colada 714) — o sea
+que del lote 706332C4 **sólo existe una placa**. Tal como está, el pedimento declararía dos veces
+la misma pieza. Una de las dos líneas debe decir **657231B7**, o bien confirmarse cuál de las dos
+placas es la que realmente sale. Antes esto era una inconsistencia documental; ahora es el
+problema central. **Sin resolverlo no se puede transmitir COVE.**
 
 **3. Encargo conferido para la patente 1941.**
 AFS informó el 13-ago-2026 que "se solicitó dar de alta unas patentes de respaldo y
@@ -53,14 +60,15 @@ partida 1 descarga 61.23 kg / USD 1,050 contra 1931AL26073388 y partida 2 descar
 20.41 kg / USD 350 contra 1931AL26077729. Total descargado 81.64 kg = total importado.
 El aviso 1931AL26073388 queda con saldo de 20.41 kg / USD 350 (vigente hasta 18-dic-2026).
 
-**6. Las "2 placas que no requieren aviso" sí lo requieren.**
+**6. Las 2 *fixture plates* quedan fuera — y cuando entren necesitarán aviso.**
 AFS planteó el 21-ago que 2 placas no necesitaban aviso automático. Pero las dos facturas
 declaran HTSUSA 7606.12.3030 para todas las líneas, AFS clasificó todo en **7606.12.99**
 y el propio aviso 1931AL26073388 se tramitó **por las cuatro placas**. Las "fixture plates
 for ISO Circle Diamond Square Test" son placas de la misma aleación 6061-T651, no artículos
-manufacturados. **Todas van amparadas por aviso** — que es exactamente como quedó armado.
-Si alguien sostiene una clasificación distinta para las fixture plates, debe emitirse
-dictamen arancelario por escrito antes de validar.
+manufacturados. Ya no entran en este pedimento, pero **cuando se importen necesitarán aviso**: el 1931AL26073388
+queda con saldo de 61.23 kg / USD 1,050, suficiente para las tres piezas restantes y vigente
+hasta el 18-dic-2026. Si alguien sostiene una clasificación distinta para las fixture plates,
+debe emitirse dictamen arancelario por escrito antes de validar.
 
 **7. Vinculación proveedor–importador.**
 MAZAK CORPORATION y MAZAK MÉXICO son empresas hermanas (confirmado por AFS el 18-ago-2026).
@@ -94,10 +102,16 @@ general.
 declarado en los pedimentos 6000001 (A1, transformador) y 6000024 (BA, herramental) de la misma
 patente. Reutilizarlo; no hace falta pedirlo otra vez.
 
-**13. Bultos y peso bruto.** Las facturas revisadas traen dos packing lists con **1 caja cada
-uno** (210 lb y 50 lb → 117.93 kg brutos), pero la entrada SD26089444 reporta **2 tarimas**
-para todo el embarque (placas + herramental). Cuadrar bultos y peso bruto con Baja Forwarding
-antes de validar; el peso neto sí está firme: 4 × 20.41 = **81.64 kg**.
+**13. Bultos y peso bruto — recalcular tras la separación.** El pedimento declara 2 bultos y
+**45.36 kg brutos**, cifra provisional: se tomó la caja de una sola placa (50 lb) como unidad,
+porque la caja grande traía las 3 piezas de la factura 1 y ahora sólo sale una. Cuadrar con Baja
+Forwarding cuando separen físicamente el embarque. El peso neto sí está firme:
+2 × 20.41 = **40.82 kg**.
+
+**19. Factura de la partida 1 subdividida.** La factura ampara 3 piezas por USD 1,050 y el
+pedimento declara 1 pieza por USD 350 (marcada `Subdividida=1` en Darwin). Pedir a AFS la
+factura reexpedida por lo que efectivamente se importa; junto con el folio duplicado del
+hallazgo 1, es la misma petición.
 
 **14. Separación del herramental.** Correcto que las placas vayan en A1 definitivo: son
 consumibles ("perishable items"), no retornan en el mismo estado y por eso no caben en el

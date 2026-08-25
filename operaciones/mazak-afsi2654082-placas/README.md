@@ -7,6 +7,10 @@ aduana **400** (Tijuana / Mesa de Otay), corresponsal **AFS Agencia Aduanal, S.C
 **Capturado en Darwin el 25-ago-2026 como proforma** (`vt_pedimentos` ID 75456): no validado,
 no pagado, no firmado, no transmitido.
 
+**Alcance:** de las 4 placas del embarque sólo se importan **2** — una por factura, ambas del
+lote 706332C4 según las facturas actuales. De la factura de la partida 1 (3 pzas) sólo entra la
+del lote 706332C4; las 2 *fixture plates* quedan pendientes.
+
 El herramental del mismo embarque ya se despachó aparte en el pedimento **6000024 clave BA**
 (pagado 24-ago-2026, USD 41,826.00), como manda el art. 106 LA.
 

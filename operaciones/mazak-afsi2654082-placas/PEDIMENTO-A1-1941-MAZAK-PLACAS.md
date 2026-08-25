@@ -6,6 +6,10 @@
 > del mismo embarque (pagado el 24-ago-2026, USD 41,826.00), aunque sigue en el pool pendiente
 > de baja manual (fila ID 136168) — no reutilizarlo.
 >
+> **Alcance reducido (instrucción de Victor, 25-ago-2026):** de las 4 placas del embarque
+> **sólo se importan 2** — una por factura. De la factura de la partida 1, que ampara 3 piezas,
+> sólo entra la del **lote 706332C4**; las 2 *fixture plates* quedan pendientes de importación.
+>
 > **Capturado en Darwin el 25-ago-2026** como proforma: `vt_pedimentos` ID **75456**,
 > facturas 187367/187368, partidas 1087179/1087180, permisos 141090/141091,
 > totales 1359783–1359787. **No validado, no pagado, no firmado, no transmitido.**
@@ -24,7 +28,7 @@
 |---|---|---|---|---|
 | F1 | `Aluminum CI and PL REVISED (01) - 1 and 2.pdf` (Erick Escobar, 21-ago-2026 22:56 UTC) | 3 | 1,050.00 | 2 pzas *fixture plate for ISO Circle Diamond Square Test* + 1 pza *AMS 4027, lote 706332C4* |
 | F2 | `Aluminum CI and PL REVISED (01) 1 piece.pdf` (mismo correo) | 1 | 350.00 | 1 pza *AMS 4027, lote 706332C4* |
-| | **Total** | **4** | **1,400.00** | |
+| | **Total facturado** | **4** | **1,400.00** | de las que sólo se importan **2** en este pedimento |
 
 Ambas: INVOICE # `CDS TEST`, PO# `Aluminum`, Customer PO# `32935`,
 Incoterm **DAP Mexicali, B.C.**, HTSUSA 7606.12.3030, ECCN EAR99 / NLR.
@@ -73,12 +77,12 @@ DEFINITIVA` / `IMD — DEFINITIVO DE IMPORTACIÓN`.
 | Cliente Darwin | 1104 · Apoderado 11 · Empresa 43 · Zona 1 (precedente 6000001) |
 | Medio de transporte (entrada/salida/arribo) | Carretero |
 | Tipo de cambio | **16.9018** |
-| Peso bruto | **117.93 kg** (210 lb + 50 lb) — confirmar contra SD26089444 |
-| Bultos | 2 cajas / 1 tarima — confirmar |
+| Peso bruto | **45.36 kg** provisional — confirmar con Baja Forwarding al separar el embarque |
+| Bultos | 2 cajas — confirmar |
 | Destino | Baja California (Mexicali) |
-| Valor dólares | **USD 1,400.00** |
-| Valor aduana | **MXN 23,663.00** (redondeo al peso por partida, como Darwin) |
-| Valor comercial | **MXN 23,663.00** |
+| Valor dólares | **USD 700.00** |
+| Valor aduana | **MXN 11,832.00** (redondeo al peso por partida, como Darwin) |
+| Valor comercial | **MXN 11,832.00** |
 | Incrementables / Decrementables | **0.00 / 0.00** (DAP Mexicali; el flete no viene desglosado, no es deducible art. 66 LA) |
 
 ### Importador
@@ -98,7 +102,7 @@ Tax ID: **11-2161864** · **VINCULACIÓN: SÍ** (empresas hermanas)
 
 | COVE | Factura | Fecha | Moneda | Valor | Observación |
 |---|---|---|---|---|---|
-| Por asignar | F1 | 17-ago-2026 | USD | 1,050.00 | **El folio de factura debe corregirse** (ver revisión) |
+| Por asignar | F1 | 17-ago-2026 | USD | 350.00 (de 1,050.00 — **subdividida**) | **El folio de factura debe corregirse** (ver revisión) |
 | Por asignar | F2 | 17-ago-2026 | USD | 350.00 | **Idem** |
 
 ---
@@ -110,15 +114,18 @@ Tax ID: **11-2161864** · **VINCULACIÓN: SÍ** (empresas hermanas)
 | Campo | Valor |
 |---|---|
 | Fracción / NICO | **7606.12.99 / 00** |
-| Descripción | PLACA DE ALUMINIO ALEADO 6061-T651, SIN RECUBRIMIENTO, SIN ACABADO, SIN ACCESORIOS INTEGRADOS, DE 12 × 12 × 3 PULGADAS, 20.41 KG C/U |
-| Cantidad UMC | 3 Pieza |
-| Cantidad UMT | **61.23 KG** |
-| Valor en dólares | 1,050.00 |
-| Valor aduana | **17,747.00 MXN** |
+| Descripción | PLACA DE ALUMINIO ALEADO 6061-T651, SIN RECUBRIMIENTO, SIN ACABADO, SIN ACCESORIOS INTEGRADOS, DE 12 × 12 × 3 PULGADAS, 20.41 KG, LOTE 706332C4 COLADA 714 |
+| Cantidad UMC | 1 Pieza |
+| Cantidad UMT | **20.41 KG** |
+| Valor en dólares | 350.00 |
+| Valor aduana | **5,916.00 MXN** |
 | País origen / vendedor | USA / USA |
-| IGI | 30 % → **5,324.00 MXN** |
+| IGI | 30 % → **1,775.00 MXN** |
 | IVA | 16 % |
-| **Permiso** | Clave **AL** · núm. **1931AL26073388** · descargo **61.23 kg / USD 1,050.00** |
+| **Permiso** | Clave **AL** · núm. **1931AL26073388** · descargo **20.41 kg / USD 350.00** (queda saldo de 61.23 kg / USD 1,050) |
+
+> La factura ampara 3 piezas por USD 1,050 y aquí sólo se declara 1 pieza por USD 350: va
+> **subdividida**. Hay que pedir a AFS la factura reexpedida por lo que efectivamente se importa.
 
 ### Partida 2 — Factura 2 (COVE 2)
 
@@ -147,13 +154,13 @@ Tax ID: **11-2161864** · **VINCULACIÓN: SÍ** (empresas hermanas)
 
 | Concepto | Base | Importe MXN |
 |---|---|---|
-| DTA 8 al millar | 23,663.00 | 189.30 → **462.00** (cuota mínima) |
-| IGI 30 % | 23,663.00 | **7,099.00** |
-| IVA 16 % | 31,224.00 (VA + IGI + DTA) | **4,996.00** |
-| **Total contribuciones** | | **12,557.00** |
+| DTA 8 al millar | 11,832.00 | 94.66 → **462.00** (cuota mínima) |
+| IGI 30 % | 11,832.00 | **3,550.00** |
+| IVA 16 % | 15,844.00 (VA + IGI + DTA) | **2,535.00** |
+| **Total contribuciones** | | **6,547.00** |
 | Prevalidación | | 330.00 |
 | IVA s/ prevalidación | | 53.00 |
-| **Total línea de captura** | | **12,940.00** |
+| **Total línea de captura** | | **6,930.00** |
 
 ### Escenario B — con certificación de origen T-MEC (IGI 0 %)
 
@@ -161,12 +168,12 @@ Tax ID: **11-2161864** · **VINCULACIÓN: SÍ** (empresas hermanas)
 |---|---|
 | DTA | 462.00 |
 | IGI 0 % | 0.00 |
-| IVA 16 % s/ 24,125.00 | 3,860.00 |
-| **Total contribuciones** | **4,322.00** |
+| IVA 16 % s/ 12,294.00 | 1,967.00 |
+| **Total contribuciones** | **2,429.00** |
 | Prevalidación + IVA | 383.00 |
-| **Total línea de captura** | **4,705.00** |
+| **Total línea de captura** | **2,812.00** |
 
-**Diferencia a favor del cliente si se obtiene la certificación T-MEC: MXN 8,235.00.**
+**Diferencia a favor del cliente si se obtiene la certificación T-MEC: MXN 4,118.00.**
 
 > Base del IVA = valor en aduana + IGI + DTA (verificado contra la operación
 > AFSI2654105 del 19-ago-2026: 76,610 + 3,830 + 613 = 81,053 × 16 % = 12,968 ✔).
@@ -193,15 +200,17 @@ OPERACION POR CORRESPONSALIA - CORRESPONSAL: AFS AGENCIA ADUANAL SC, RFC AAA1411
 DESTINATARIO FINAL: INTERIORES AEREOS SA DE CV, BLVD LAZARO CARDENAS 2385,
 PLUTARCO ELIAS CALLES, MEXICALI BC 21376
 
-LAS MERCANCIAS AMPARADAS POR EL PRESENTE PEDIMENTO SON CUATRO PLACAS DE ALUMINIO ALEADO 6061-T651 SIN TRABAJAR, QUE SE DESPACHAN EN DEFINITIVO POR SEPARADO DEL HERRAMENTAL DEL MISMO EMBARQUE, AMPARADO POR EL PEDIMENTO 6000024 CLAVE BA DE LA MISMA PATENTE Y REFERENCIA.
+LAS MERCANCIAS AMPARADAS POR EL PRESENTE PEDIMENTO SON DOS PLACAS DE ALUMINIO ALEADO 6061-T651 SIN TRABAJAR, UNA POR CADA FACTURA, QUE SE DESPACHAN EN DEFINITIVO POR SEPARADO DEL HERRAMENTAL DEL MISMO EMBARQUE, AMPARADO POR EL PEDIMENTO 6000024 CLAVE BA DE LA MISMA PATENTE Y REFERENCIA.
 
-AVISO AUTOMATICO DE IMPORTACION DE ALUMINIO 1931AL26073388 DEL 18-08-2026, VIGENTE AL 18-12-2026, DESCARGADO EN LA PARTIDA 1 POR 61.23 KG Y 1,050.00 USD.
+DE LA FACTURA DE LA PARTIDA 1 SOLO SE IMPORTA UNA DE LAS TRES PIEZAS AMPARADAS, LA DEL LOTE 706332C4; LAS DOS PLACAS RESTANTES QUEDAN PENDIENTES DE IMPORTACION.
+
+AVISO AUTOMATICO DE IMPORTACION DE ALUMINIO 1931AL26073388 DEL 18-08-2026, VIGENTE AL 18-12-2026, DESCARGADO EN LA PARTIDA 1 POR 20.41 KG Y 350.00 USD.
 AVISO AUTOMATICO DE IMPORTACION DE ALUMINIO 1931AL26077729 DEL 21-08-2026, VIGENTE AL 21-12-2026, DESCARGADO EN LA PARTIDA 2 POR 20.41 KG Y 350.00 USD.
 
 ENTRADA A BODEGA SD26089444 - BAJA FORWARDING - 19-08-2026. ITN/AES X20260821641827.
 
 - - Relacion de facturas - -
-FACTR: MAZAK CORPORATION;11-2161864;<FOLIO FACTURA 1>;17-08-2026;<COVE 1>;USD;1,050.000
+FACTR: MAZAK CORPORATION;11-2161864;<FOLIO FACTURA 1>;17-08-2026;<COVE 1>;USD;350.000
 FACTR: MAZAK CORPORATION;11-2161864;<FOLIO FACTURA 2>;17-08-2026;<COVE 2>;USD;350.000
 ```
 

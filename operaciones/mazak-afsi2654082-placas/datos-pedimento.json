@@ -1,0 +1,159 @@
+{
+  "referencia_afs": "AFSI2654082",
+  "corresponsalia": "AFS FORWARDING / AFS AGENCIA ADUANAL — RyR ejecuta como corresponsal (60%)",
+  "patente": 1941,
+  "aduana_seccion": "400 (Tijuana / Garita Mesa de Otay)",
+  "clave_pedimento": "A1",
+  "regimen": "IMD — Definitivo de importacion",
+  "tipo_operacion": "IMP",
+  "tipo_cambio": 16.9018,
+  "tipo_cambio_fuente": "DOF publicado 24-ago-2026 (Art. 20 CFF: DOF del dia anterior al pago). Revalidar si el pago no ocurre el 25-ago-2026.",
+  "importador": {
+    "razon_social": "MAZAK MEXICO, S.A. DE C.V.",
+    "rfc": "MME940617GL9",
+    "domicilio": "CALLE SPECTRUM 100, PARQUE INDUSTRIAL FINSA, APODACA, NUEVO LEON, C.P. 66600"
+  },
+  "proveedor": {
+    "razon_social": "MAZAK CORPORATION",
+    "domicilio": "8025 PRODUCTION DRIVE, FLORENCE, KY 41042, USA",
+    "tax_id": "PENDIENTE — solicitar a AFS",
+    "vinculacion": "SI (empresas hermanas, confirmado por AFS el 18-ago-2026 para la operacion AFSI2654105)"
+  },
+  "destinatario_final": {
+    "razon_social": "INTERIORES AEREOS, S.A. DE C.V.",
+    "domicilio": "BLVD. LAZARO CARDENAS 2385, MEXICALI, BAJA CALIFORNIA, C.P. 21376"
+  },
+  "entrada_bodega": "SD26089444 — BAJA FORWARDING — 19/08/2026 — 2 pallets (pallet 1: placas; pallet 2: herramental, va en pedimento BA aparte)",
+  "itn_aes": "X20260821641827",
+  "incoterm": "DAP MEXICALI, B.C., MEXICO",
+  "moneda": "USD",
+  "facturas": [
+    {
+      "id": "Factura 1",
+      "archivo": "Aluminum CI and PL REVISED (01) - 1 and 2.pdf",
+      "numero_declarado": "CDS TEST",
+      "fecha_impresa": "4/19/2024",
+      "fecha_packing_list": "08/17/2026",
+      "customer_po": "32935",
+      "valor_usd": 1050.00,
+      "piezas": 3,
+      "lineas": [
+        {"desc": "6061-T651 aluminum alloy fixture plate for ISO Circle Diamond Square Test", "qty": 2, "unit_usd": 350.0, "total_usd": 700.0},
+        {"desc": "6061-T651 aluminum alloy plate, AMS 4027, 12x12x3 in, saw-cut. Lot 706332C4, 20.41 kg", "qty": 1, "unit_usd": 350.0, "total_usd": 350.0}
+      ]
+    },
+    {
+      "id": "Factura 2",
+      "archivo": "Aluminum CI and PL REVISED (01) 1 piece.pdf",
+      "numero_declarado": "CDS TEST",
+      "fecha_impresa": "4/19/2024",
+      "fecha_packing_list": "08/17/2026",
+      "customer_po": "32935",
+      "valor_usd": 350.00,
+      "piezas": 1,
+      "lineas": [
+        {"desc": "6061-T651 aluminum alloy plate, AMS 4027, 12x12x3 in, saw-cut. Lot 706332C4, 20.41 kg", "qty": 1, "unit_usd": 350.0, "total_usd": 350.0}
+      ]
+    }
+  ],
+  "avisos_automaticos_aluminio": [
+    {
+      "numero": "1931AL26073388",
+      "clave_permiso_apendice_9": "AL",
+      "folio_vucem": "0201300102320261931016923",
+      "folio_presentacion": "218283028",
+      "fecha": "18/08/2026",
+      "vigencia_hasta": "18/12/2026",
+      "fraccion": "76061299",
+      "nico": "00",
+      "cantidad_umt_kg": 81.64,
+      "valor_usd": 1400.00,
+      "precio_unitario_usd_kg": 17.148,
+      "ampara": "CUATRO placas 6061-T651 (1 pza lote 657231B7 colada 558; 2 pzas lote 660681B8 colada 714; 1 pza lote 706332C4 colada 714)",
+      "pais_origen": "USA",
+      "pais_exportador": "USA",
+      "pais_vertido_cast": "USA",
+      "principal_pais_fundicion_smelting": "CANADA",
+      "descargo_en_este_pedimento": {"partida": 1, "cantidad_umt_kg": 61.23, "valor_usd": 1050.00},
+      "saldo_remanente": {"cantidad_umt_kg": 20.41, "valor_usd": 350.00}
+    },
+    {
+      "numero": "1931AL26077729",
+      "clave_permiso_apendice_9": "AL",
+      "folio_vucem": "0201300102320261931017850",
+      "folio_presentacion": "218318629",
+      "fecha": "21/08/2026",
+      "vigencia_hasta": "21/12/2026",
+      "fraccion": "76061299",
+      "nico": "00",
+      "cantidad_umt_kg": 20.41,
+      "valor_usd": 350.00,
+      "precio_unitario_usd_kg": 17.148,
+      "ampara": "UNA placa 6061-T651 lote 706332C4 colada 714",
+      "pais_origen": "USA",
+      "pais_exportador": "USA",
+      "pais_vertido_cast": "USA",
+      "principal_pais_fundicion_smelting": "CANADA",
+      "descargo_en_este_pedimento": {"partida": 2, "cantidad_umt_kg": 20.41, "valor_usd": 350.00},
+      "saldo_remanente": {"cantidad_umt_kg": 0.0, "valor_usd": 0.0}
+    }
+  ],
+  "partidas": [
+    {
+      "num": 1,
+      "fraccion": "7606.12.99",
+      "nico": "00",
+      "descripcion": "PLACA DE ALUMINIO ALEADO 6061-T651, SIN RECUBRIMIENTO, SIN ACABADO, SIN ACCESORIOS INTEGRADOS, DE 12 x 12 x 3 PULGADAS, 20.41 KG CADA UNA",
+      "cantidad_umc": 3, "umc": "Pieza",
+      "cantidad_umt": 61.23, "umt": "Kilogramo",
+      "valor_usd": 1050.00, "valor_aduana_mxn": 17746.89,
+      "pais_origen": "USA", "pais_vendedor": "USA",
+      "igi_tasa_pct": 30, "igi_mxn": 5324.07,
+      "permiso": {"clave": "AL", "numero": "1931AL26073388", "cant_umt": 61.23, "val_com_dls": 1050.00}
+    },
+    {
+      "num": 2,
+      "fraccion": "7606.12.99",
+      "nico": "00",
+      "descripcion": "PLACA DE ALUMINIO ALEADO 6061-T651, SIN RECUBRIMIENTO, SIN ACABADO, SIN ACCESORIOS INTEGRADOS, DE 12 x 12 x 3 PULGADAS, 20.41 KG, LOTE 706332C4 COLADA 714",
+      "cantidad_umc": 1, "umc": "Pieza",
+      "cantidad_umt": 20.41, "umt": "Kilogramo",
+      "valor_usd": 350.00, "valor_aduana_mxn": 5915.63,
+      "pais_origen": "USA", "pais_vendedor": "USA",
+      "igi_tasa_pct": 30, "igi_mxn": 1774.69,
+      "permiso": {"clave": "AL", "numero": "1931AL26077729", "cant_umt": 20.41, "val_com_dls": 350.00}
+    }
+  ],
+  "totales": {
+    "valor_dolares": 1400.00,
+    "valor_aduana_mxn": 23662.52,
+    "valor_comercial_mxn": 23662.52,
+    "incrementables_mxn": 0.00,
+    "decrementables_mxn": 0.00,
+    "peso_neto_kg": 81.64,
+    "peso_bruto_kg": 117.93,
+    "bultos": "2 cajas / 1 tarima — confirmar contra entrada SD26089444"
+  },
+  "contribuciones_escenario_sin_tmec": {
+    "DTA_8_al_millar_calculado": 189.30,
+    "DTA_declarado_cuota_minima": 316.00,
+    "IGI_30": 7098.76,
+    "base_IVA": 31077.28,
+    "IVA_16": 4972.36,
+    "total_contribuciones": 12387.12,
+    "prevalidacion": 330.00,
+    "iva_prevalidacion": 52.80,
+    "total_efectivo_linea_captura": 12769.92
+  },
+  "contribuciones_escenario_con_tmec": {
+    "DTA_declarado_cuota_minima": 316.00,
+    "IGI_0": 0.00,
+    "base_IVA": 23978.52,
+    "IVA_16": 3836.56,
+    "total_contribuciones": 4152.56,
+    "prevalidacion": 330.00,
+    "iva_prevalidacion": 52.80,
+    "total_efectivo_linea_captura": 4535.36,
+    "ahorro_vs_sin_tmec": 8234.56
+  }
+}

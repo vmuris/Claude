@@ -4,6 +4,9 @@ Pedimento **6000025** — `26 40 1941 6000025` — clave **A1 (definitivo)**, pa
 aduana **400** (Tijuana / Mesa de Otay), corresponsal **AFS Agencia Aduanal, S.C.**
 (RFC AAA141120UX9); AFS Forwarding coordina la logística.
 
+**Capturado en Darwin el 25-ago-2026 como proforma** (`vt_pedimentos` ID 75456): no validado,
+no pagado, no firmado, no transmitido.
+
 El herramental del mismo embarque ya se despachó aparte en el pedimento **6000024 clave BA**
 (pagado 24-ago-2026, USD 41,826.00), como manda el art. 106 LA.
 

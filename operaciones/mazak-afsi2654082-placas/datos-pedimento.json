@@ -143,11 +143,11 @@
       "cantidad_umt": 61.23,
       "umt": "Kilogramo",
       "valor_usd": 1050.0,
-      "valor_aduana_mxn": 17746.89,
+      "valor_aduana_mxn": 17747.0,
       "pais_origen": "USA",
       "pais_vendedor": "USA",
       "igi_tasa_pct": 30,
-      "igi_mxn": 5324.07,
+      "igi_mxn": 5324.0,
       "permiso": {
         "clave": "AL",
         "numero": "1931AL26073388",
@@ -165,11 +165,11 @@
       "cantidad_umt": 20.41,
       "umt": "Kilogramo",
       "valor_usd": 350.0,
-      "valor_aduana_mxn": 5915.63,
+      "valor_aduana_mxn": 5916.0,
       "pais_origen": "USA",
       "pais_vendedor": "USA",
       "igi_tasa_pct": 30,
-      "igi_mxn": 1774.69,
+      "igi_mxn": 1775.0,
       "permiso": {
         "clave": "AL",
         "numero": "1931AL26077729",
@@ -180,8 +180,8 @@
   ],
   "totales": {
     "valor_dolares": 1400.0,
-    "valor_aduana_mxn": 23662.52,
-    "valor_comercial_mxn": 23662.52,
+    "valor_aduana_mxn": 23663.0,
+    "valor_comercial_mxn": 23663.0,
     "incrementables_mxn": 0.0,
     "decrementables_mxn": 0.0,
     "peso_neto_kg": 81.64,
@@ -190,26 +190,51 @@
   },
   "contribuciones_escenario_sin_tmec": {
     "DTA_8_al_millar_calculado": 189.3,
-    "DTA_declarado_cuota_minima": 316.0,
-    "IGI_30": 7098.76,
-    "base_IVA": 31077.28,
-    "IVA_16": 4972.36,
-    "total_contribuciones": 12387.12,
+    "DTA_declarado_cuota_minima": 462.0,
+    "IGI_30": 7099.0,
+    "base_IVA": 31224.0,
+    "IVA_16": 4996.0,
+    "total_contribuciones": 12557.0,
     "prevalidacion": 330.0,
-    "iva_prevalidacion": 52.8,
-    "total_efectivo_linea_captura": 12769.92
+    "iva_prevalidacion": 53.0,
+    "total_efectivo_linea_captura": 12940.0
   },
   "contribuciones_escenario_con_tmec": {
-    "DTA_declarado_cuota_minima": 316.0,
+    "DTA_declarado_cuota_minima": 462.0,
     "IGI_0": 0.0,
-    "base_IVA": 23978.52,
-    "IVA_16": 3836.56,
-    "total_contribuciones": 4152.56,
+    "base_IVA": 24125.0,
+    "IVA_16": 3860.0,
+    "total_contribuciones": 4322.0,
     "prevalidacion": 330.0,
-    "iva_prevalidacion": 52.8,
-    "total_efectivo_linea_captura": 4535.36,
-    "ahorro_vs_sin_tmec": 8234.56
+    "iva_prevalidacion": 53.0,
+    "total_efectivo_linea_captura": 4705.0,
+    "ahorro_vs_sin_tmec": 8235.0
   },
   "observaciones_pedimento": "IMPORTACION DEFINITIVA DE MERCANCIA EN BASE AL ARTICULO 96 DE LA LEY ADUANERA VIGENTE\nREFERENCIA:AFSI2654082\n\nOPERACION POR CORRESPONSALIA - CORRESPONSAL: AFS AGENCIA ADUANAL SC, RFC AAA141120UX9 - PATENTE 1941\n\nDESTINATARIO FINAL: INTERIORES AEREOS SA DE CV, BLVD LAZARO CARDENAS 2385,\nPLUTARCO ELIAS CALLES, MEXICALI BC 21376\n\nLAS MERCANCIAS AMPARADAS POR EL PRESENTE PEDIMENTO SON CUATRO PLACAS DE ALUMINIO ALEADO 6061-T651 SIN TRABAJAR, QUE SE DESPACHAN EN DEFINITIVO POR SEPARADO DEL HERRAMENTAL DEL MISMO EMBARQUE, AMPARADO POR EL PEDIMENTO 6000024 CLAVE BA DE LA MISMA PATENTE Y REFERENCIA.\n\nAVISO AUTOMATICO DE IMPORTACION DE ALUMINIO 1931AL26073388 DEL 18-08-2026, VIGENTE AL 18-12-2026, DESCARGADO EN LA PARTIDA 1 POR 61.23 KG Y 1,050.00 USD.\nAVISO AUTOMATICO DE IMPORTACION DE ALUMINIO 1931AL26077729 DEL 21-08-2026, VIGENTE AL 21-12-2026, DESCARGADO EN LA PARTIDA 2 POR 20.41 KG Y 350.00 USD.\n\nENTRADA A BODEGA SD26089444 - BAJA FORWARDING - 19-08-2026. ITN/AES X20260821641827.\n\n- - Relacion de facturas - -\nFACTR: MAZAK CORPORATION;11-2161864;<FOLIO FACTURA 1>;17-08-2026;<COVE 1>;USD;1,050.000\nFACTR: MAZAK CORPORATION;11-2161864;<FOLIO FACTURA 2>;17-08-2026;<COVE 2>;USD;350.000",
-  "precedente_captura": "Apoderado 11, empresa 43, zona 1 — conforme al pedimento 6000001 A1 de la misma patente y cliente."
+  "precedente_captura": "Apoderado 11, empresa 43, zona 1 — conforme al pedimento 6000001 A1 de la misma patente y cliente.",
+  "capturado_en_darwin": {
+    "estatus": "PROFORMA capturada 25-ago-2026 — no validada, no pagada, no firmada, no transmitida",
+    "vt_pedimentos_ID": 75456,
+    "vt_pedimentofacturas_IDs": [
+      187367,
+      187368
+    ],
+    "vt_partidas_IDs": [
+      1087179,
+      1087180
+    ],
+    "vt_partidapermisos_IDs": [
+      141090,
+      141091
+    ],
+    "vt_totales_IDs": [
+      1359783,
+      1359784,
+      1359785,
+      1359786,
+      1359787
+    ],
+    "pendiente_humano": "Dar de baja del pool vt_numerospedi las filas ID 136168 (numero 6000024, ya consumido por el BA) y ID 125184 (numero 6000025, consumido por este pedimento); el agente no borra."
+  },
+  "dta_nota": "Cuota minima de DTA verificada empiricamente contra Darwin: todos los A1 de 2026 con valor en aduana bajo el umbral pagan 462.00 (no 316.00). El 8 al millar aplica arriba de ~57,750 MXN de valor en aduana."
 }

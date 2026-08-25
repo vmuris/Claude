@@ -77,12 +77,14 @@ pero hay que dejarlo documentado en la hoja de cálculo.
 AFS comunicó el 14-ago-2026. Confirmar contra la TIGIE vigente (hubo modificaciones por
 decreto del 29-dic-2025 y del 23-abr-2026) y contra el validador antes de pagar.
 
-**9. Cuota mínima del DTA.** 8 al millar sobre 23,662.52 da **189.30**, por debajo de la
-cuota mínima (**316.00** para 2026, art. 49 LFD). La hoja declara 316.00; confirmar la
-cuota vigente publicada en el DOF del 28-dic-2025.
+**9. Cuota mínima del DTA — resuelto.** 8 al millar sobre 23,663 da **189.30**, por debajo de
+la cuota mínima. La cuota es **462.00**, verificada contra Darwin: todos los pedimentos A1 de
+2026 con valor en aduana por debajo del umbral (~57,750 MXN) pagan 462.00, y el 6000001 de
+Mazak, con 76,610, sí paga 8 al millar (613). El pedimento declara 462.00.
 
 **10. Tipo de cambio.** Se usó **16.9018** (DOF publicado 24-ago-2026), aplicable si el
-pago se hace el **25-ago-2026** (art. 20 CFF). Si el pago se recorre, recalcular todo.
+pago se hace el **25-ago-2026** (art. 20 CFF). Corrobora el precedente: el BA 6000024, pagado
+el 24-ago, usó 16.9583, que es el publicado el 21-ago. Si el pago se recorre, recalcular todo.
 
 **11. Padrón de importadores de sectores específicos.** Verificar que MAZAK MÉXICO esté
 inscrito en el sector aplicable a productos de aluminio (Anexo 10 RGCE) además del padrón

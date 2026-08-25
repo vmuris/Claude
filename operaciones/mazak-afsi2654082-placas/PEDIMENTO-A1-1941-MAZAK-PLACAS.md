@@ -5,6 +5,10 @@
 > primer libre (fila ID 125184). El 6000024 ya lo consumió el pedimento **BA del herramental**
 > del mismo embarque (pagado el 24-ago-2026, USD 41,826.00), aunque sigue en el pool pendiente
 > de baja manual (fila ID 136168) — no reutilizarlo.
+>
+> **Capturado en Darwin el 25-ago-2026** como proforma: `vt_pedimentos` ID **75456**,
+> facturas 187367/187368, partidas 1087179/1087180, permisos 141090/141091,
+> totales 1359783–1359787. **No validado, no pagado, no firmado, no transmitido.**
 
 > Hoja de captura / proforma. Los importes se calculan con TC DOF **16.9018**
 > (publicado 24-ago-2026, Art. 20 CFF). Si el pago no ocurre el 25-ago-2026 hay
@@ -73,8 +77,8 @@ DEFINITIVA` / `IMD — DEFINITIVO DE IMPORTACIÓN`.
 | Bultos | 2 cajas / 1 tarima — confirmar |
 | Destino | Baja California (Mexicali) |
 | Valor dólares | **USD 1,400.00** |
-| Valor aduana | **MXN 23,662.52** |
-| Valor comercial | **MXN 23,662.52** |
+| Valor aduana | **MXN 23,663.00** (redondeo al peso por partida, como Darwin) |
+| Valor comercial | **MXN 23,663.00** |
 | Incrementables / Decrementables | **0.00 / 0.00** (DAP Mexicali; el flete no viene desglosado, no es deducible art. 66 LA) |
 
 ### Importador
@@ -110,9 +114,9 @@ Tax ID: **11-2161864** · **VINCULACIÓN: SÍ** (empresas hermanas)
 | Cantidad UMC | 3 Pieza |
 | Cantidad UMT | **61.23 KG** |
 | Valor en dólares | 1,050.00 |
-| Valor aduana | **17,746.89 MXN** |
+| Valor aduana | **17,747.00 MXN** |
 | País origen / vendedor | USA / USA |
-| IGI | 30 % → **5,324.07 MXN** |
+| IGI | 30 % → **5,324.00 MXN** |
 | IVA | 16 % |
 | **Permiso** | Clave **AL** · núm. **1931AL26073388** · descargo **61.23 kg / USD 1,050.00** |
 
@@ -125,9 +129,9 @@ Tax ID: **11-2161864** · **VINCULACIÓN: SÍ** (empresas hermanas)
 | Cantidad UMC | 1 Pieza |
 | Cantidad UMT | **20.41 KG** |
 | Valor en dólares | 350.00 |
-| Valor aduana | **5,915.63 MXN** |
+| Valor aduana | **5,916.00 MXN** |
 | País origen / vendedor | USA / USA |
-| IGI | 30 % → **1,774.69 MXN** |
+| IGI | 30 % → **1,775.00 MXN** |
 | IVA | 16 % |
 | **Permiso** | Clave **AL** · núm. **1931AL26077729** · descargo **20.41 kg / USD 350.00** |
 
@@ -143,31 +147,34 @@ Tax ID: **11-2161864** · **VINCULACIÓN: SÍ** (empresas hermanas)
 
 | Concepto | Base | Importe MXN |
 |---|---|---|
-| DTA 8 al millar | 23,662.52 | 189.30 → **316.00** (cuota mínima) |
-| IGI 30 % | 23,662.52 | **7,098.76** |
-| IVA 16 % | 31,077.28 (VA + IGI + DTA) | **4,972.36** |
-| **Total contribuciones** | | **12,387.12** |
+| DTA 8 al millar | 23,663.00 | 189.30 → **462.00** (cuota mínima) |
+| IGI 30 % | 23,663.00 | **7,099.00** |
+| IVA 16 % | 31,224.00 (VA + IGI + DTA) | **4,996.00** |
+| **Total contribuciones** | | **12,557.00** |
 | Prevalidación | | 330.00 |
-| IVA s/ prevalidación | | 52.80 |
-| **Total línea de captura** | | **12,769.92** |
+| IVA s/ prevalidación | | 53.00 |
+| **Total línea de captura** | | **12,940.00** |
 
 ### Escenario B — con certificación de origen T-MEC (IGI 0 %)
 
 | Concepto | Importe MXN |
 |---|---|
-| DTA | 316.00 |
+| DTA | 462.00 |
 | IGI 0 % | 0.00 |
-| IVA 16 % s/ 23,978.52 | 3,836.56 |
-| **Total contribuciones** | **4,152.56** |
-| Prevalidación + IVA | 382.80 |
-| **Total línea de captura** | **4,535.36** |
+| IVA 16 % s/ 24,125.00 | 3,860.00 |
+| **Total contribuciones** | **4,322.00** |
+| Prevalidación + IVA | 383.00 |
+| **Total línea de captura** | **4,705.00** |
 
-**Diferencia a favor del cliente si se obtiene la certificación T-MEC: MXN 8,234.56.**
+**Diferencia a favor del cliente si se obtiene la certificación T-MEC: MXN 8,235.00.**
 
 > Base del IVA = valor en aduana + IGI + DTA (verificado contra la operación
 > AFSI2654105 del 19-ago-2026: 76,610 + 3,830 + 613 = 81,053 × 16 % = 12,968 ✔).
 > La prevalidación no forma parte de la base del IVA del pedimento.
 > Cuotas de prevalidación tomadas de la misma operación de agosto 2026.
+> **Cuota mínima de DTA = 462.00**, verificada contra Darwin: todos los A1 de 2026 con valor
+> en aduana por debajo del umbral (~57,750 MXN) pagan 462.00. El 316.00 que traía el borrador
+> anterior estaba mal.
 
 ---
 

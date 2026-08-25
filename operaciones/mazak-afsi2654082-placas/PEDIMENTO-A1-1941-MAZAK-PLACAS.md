@@ -1,5 +1,10 @@
-# Pedimento A1 — MAZAK MÉXICO — Placas de aluminio 6061-T651
-**Patente 1941 · Aduana 400 (Tijuana / Garita Mesa de Otay) · Corresponsalía AFS · Ref. AFSI2654082**
+# Pedimento **6000025** — MAZAK MÉXICO — Placas de aluminio 6061-T651
+**26 40 1941 6000025 · Clave A1 · Aduana 400 (Tijuana / Garita Mesa de Otay) · Corresponsalía AFS · Ref. AFSI2654082**
+
+> Número tomado del pool `vt_numerospedi` de la patente 1941 / aduana 400 / 2026: **6000025** es el
+> primer libre (fila ID 125184). El 6000024 ya lo consumió el pedimento **BA del herramental**
+> del mismo embarque (pagado el 24-ago-2026, USD 41,826.00), aunque sigue en el pool pendiente
+> de baja manual (fila ID 136168) — no reutilizarlo.
 
 > Hoja de captura / proforma. Los importes se calculan con TC DOF **16.9018**
 > (publicado 24-ago-2026, Art. 20 CFF). Si el pago no ocurre el 25-ago-2026 hay
@@ -57,8 +62,11 @@ DEFINITIVA` / `IMD — DEFINITIVO DE IMPORTACIÓN`.
 | Tipo de operación | **IMP** |
 | Clave de pedimento | **A1** |
 | Régimen | **IMD** — definitivo de importación |
+| Número de pedimento | **6000025** (`26 40 1941 6000025`) |
 | Patente / Aduana-Sección | **1941 / 400** |
-| Agente aduanal | RyR Servicios Aduanales, S.C. (corresponsal de **AFS Agencia Aduanal**, ref. AFSI2654082) |
+| Agente aduanal | Patente 1941 · RyR Servicios Aduanales, S.C. |
+| Corresponsal | **AFS AGENCIA ADUANAL, S.C.** — RFC **AAA141120UX9** (Nuevo Laredo) · EmpresaRFC 43. AFS Forwarding (Laredo, TX) coordina la logística |
+| Cliente Darwin | 1104 · Apoderado 11 · Empresa 43 · Zona 1 (precedente 6000001) |
 | Medio de transporte (entrada/salida/arribo) | Carretero |
 | Tipo de cambio | **16.9018** |
 | Peso bruto | **117.93 kg** (210 lb + 50 lb) — confirmar contra SD26089444 |
@@ -75,7 +83,7 @@ Calle Spectrum 100, Parque Industrial FINSA, Apodaca, Nuevo León, C.P. 66600
 
 ### Proveedor
 **MAZAK CORPORATION** — 8025 Production Drive, Florence, KY 41042, USA
-Tax ID: **pendiente** (solicitar a AFS) · **VINCULACIÓN: SÍ** (empresas hermanas)
+Tax ID: **11-2161864** · **VINCULACIÓN: SÍ** (empresas hermanas)
 
 ### Destinatario / domicilio de destino
 **INTERIORES AÉREOS, S.A. DE C.V.** — Blvd. Lázaro Cárdenas 2385, Mexicali, B.C., C.P. 21376
@@ -163,11 +171,35 @@ Tax ID: **pendiente** (solicitar a AFS) · **VINCULACIÓN: SÍ** (empresas herma
 
 ---
 
-## 6. Observaciones sugeridas para el pedimento
-- Referencia corresponsalía AFS: **AFSI2654082**. Entrada de bodega **SD26089444** (Baja Forwarding).
-- ITN/AES **X20260821641827**.
-- Mercancía destinada a **INTERIORES AÉREOS, S.A. DE C.V.**, Mexicali, B.C.
-- Herramental del mismo embarque se despacha por separado en pedimento **BA** (art. 106 LA).
+## 6. Observaciones del pedimento
+
+Texto listo para capturar en el campo `Observaciones` (estilo de la casa: mayúsculas sin acentos,
+bloque de relación de facturas al final). Sustituir `<FOLIO FACTURA n>` y `<COVE n>` cuando AFS
+mande las facturas con folios corregidos y se transmitan los COVE.
+
+```text
+IMPORTACION DEFINITIVA DE MERCANCIA EN BASE AL ARTICULO 96 DE LA LEY ADUANERA VIGENTE
+REFERENCIA:AFSI2654082
+
+OPERACION POR CORRESPONSALIA - CORRESPONSAL: AFS AGENCIA ADUANAL SC, RFC AAA141120UX9 - PATENTE 1941
+
+DESTINATARIO FINAL: INTERIORES AEREOS SA DE CV, BLVD LAZARO CARDENAS 2385,
+PLUTARCO ELIAS CALLES, MEXICALI BC 21376
+
+LAS MERCANCIAS AMPARADAS POR EL PRESENTE PEDIMENTO SON CUATRO PLACAS DE ALUMINIO ALEADO 6061-T651 SIN TRABAJAR, QUE SE DESPACHAN EN DEFINITIVO POR SEPARADO DEL HERRAMENTAL DEL MISMO EMBARQUE, AMPARADO POR EL PEDIMENTO 6000024 CLAVE BA DE LA MISMA PATENTE Y REFERENCIA.
+
+AVISO AUTOMATICO DE IMPORTACION DE ALUMINIO 1931AL26073388 DEL 18-08-2026, VIGENTE AL 18-12-2026, DESCARGADO EN LA PARTIDA 1 POR 61.23 KG Y 1,050.00 USD.
+AVISO AUTOMATICO DE IMPORTACION DE ALUMINIO 1931AL26077729 DEL 21-08-2026, VIGENTE AL 21-12-2026, DESCARGADO EN LA PARTIDA 2 POR 20.41 KG Y 350.00 USD.
+
+ENTRADA A BODEGA SD26089444 - BAJA FORWARDING - 19-08-2026. ITN/AES X20260821641827.
+
+- - Relacion de facturas - -
+FACTR: MAZAK CORPORATION;11-2161864;<FOLIO FACTURA 1>;17-08-2026;<COVE 1>;USD;1,050.000
+FACTR: MAZAK CORPORATION;11-2161864;<FOLIO FACTURA 2>;17-08-2026;<COVE 2>;USD;350.000
+```
+
+La referencia va en dos lugares, igual que en el 6000024: en el campo `Referencia` de Darwin como
+**`AFSI2654082 MAZAK`**, y dentro de observaciones como **`REFERENCIA:AFSI2654082`**.
 
 ---
 

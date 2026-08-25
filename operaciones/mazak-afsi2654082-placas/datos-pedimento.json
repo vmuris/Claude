@@ -1,6 +1,11 @@
 {
   "referencia_afs": "AFSI2654082",
-  "corresponsalia": "AFS FORWARDING / AFS AGENCIA ADUANAL — RyR ejecuta como corresponsal (60%)",
+  "pedimento": "6000025",
+  "pedimento_completo": "26 40 1941 6000025",
+  "pedimento_fuente": "Primer numero libre del pool vt_numerospedi patente 1941 / aduana 400 / 2026 (fila ID 125184). El 6000024 ya lo consumio el BA del herramental (PedID 75449) aunque sigue en el pool pendiente de baja manual (fila ID 136168).",
+  "pedimento_hermano_ba": "6000024 — clave BA — herramental del mismo embarque — pagado 24-ago-2026 — USD 41,826.00 — PedID 75449",
+  "cliente_darwin": 1104,
+  "corresponsalia": "Corresponsal: AFS AGENCIA ADUANAL SC, RFC AAA141120UX9 (Nuevo Laredo), EmpresaRFC 43. AFS Forwarding (Laredo, TX) es el coordinador logistico. Despacho bajo patente 1941, aduana 400.",
   "patente": 1941,
   "aduana_seccion": "400 (Tijuana / Garita Mesa de Otay)",
   "clave_pedimento": "A1",
@@ -16,7 +21,7 @@
   "proveedor": {
     "razon_social": "MAZAK CORPORATION",
     "domicilio": "8025 PRODUCTION DRIVE, FLORENCE, KY 41042, USA",
-    "tax_id": "PENDIENTE — solicitar a AFS",
+    "tax_id": "11-2161864",
     "vinculacion": "SI (empresas hermanas, confirmado por AFS el 18-ago-2026 para la operacion AFSI2654105)"
   },
   "destinatario_final": {
@@ -35,11 +40,21 @@
       "fecha_impresa": "4/19/2024",
       "fecha_packing_list": "08/17/2026",
       "customer_po": "32935",
-      "valor_usd": 1050.00,
+      "valor_usd": 1050.0,
       "piezas": 3,
       "lineas": [
-        {"desc": "6061-T651 aluminum alloy fixture plate for ISO Circle Diamond Square Test", "qty": 2, "unit_usd": 350.0, "total_usd": 700.0},
-        {"desc": "6061-T651 aluminum alloy plate, AMS 4027, 12x12x3 in, saw-cut. Lot 706332C4, 20.41 kg", "qty": 1, "unit_usd": 350.0, "total_usd": 350.0}
+        {
+          "desc": "6061-T651 aluminum alloy fixture plate for ISO Circle Diamond Square Test",
+          "qty": 2,
+          "unit_usd": 350.0,
+          "total_usd": 700.0
+        },
+        {
+          "desc": "6061-T651 aluminum alloy plate, AMS 4027, 12x12x3 in, saw-cut. Lot 706332C4, 20.41 kg",
+          "qty": 1,
+          "unit_usd": 350.0,
+          "total_usd": 350.0
+        }
       ]
     },
     {
@@ -49,10 +64,15 @@
       "fecha_impresa": "4/19/2024",
       "fecha_packing_list": "08/17/2026",
       "customer_po": "32935",
-      "valor_usd": 350.00,
+      "valor_usd": 350.0,
       "piezas": 1,
       "lineas": [
-        {"desc": "6061-T651 aluminum alloy plate, AMS 4027, 12x12x3 in, saw-cut. Lot 706332C4, 20.41 kg", "qty": 1, "unit_usd": 350.0, "total_usd": 350.0}
+        {
+          "desc": "6061-T651 aluminum alloy plate, AMS 4027, 12x12x3 in, saw-cut. Lot 706332C4, 20.41 kg",
+          "qty": 1,
+          "unit_usd": 350.0,
+          "total_usd": 350.0
+        }
       ]
     }
   ],
@@ -67,15 +87,22 @@
       "fraccion": "76061299",
       "nico": "00",
       "cantidad_umt_kg": 81.64,
-      "valor_usd": 1400.00,
+      "valor_usd": 1400.0,
       "precio_unitario_usd_kg": 17.148,
       "ampara": "CUATRO placas 6061-T651 (1 pza lote 657231B7 colada 558; 2 pzas lote 660681B8 colada 714; 1 pza lote 706332C4 colada 714)",
       "pais_origen": "USA",
       "pais_exportador": "USA",
       "pais_vertido_cast": "USA",
       "principal_pais_fundicion_smelting": "CANADA",
-      "descargo_en_este_pedimento": {"partida": 1, "cantidad_umt_kg": 61.23, "valor_usd": 1050.00},
-      "saldo_remanente": {"cantidad_umt_kg": 20.41, "valor_usd": 350.00}
+      "descargo_en_este_pedimento": {
+        "partida": 1,
+        "cantidad_umt_kg": 61.23,
+        "valor_usd": 1050.0
+      },
+      "saldo_remanente": {
+        "cantidad_umt_kg": 20.41,
+        "valor_usd": 350.0
+      }
     },
     {
       "numero": "1931AL26077729",
@@ -87,15 +114,22 @@
       "fraccion": "76061299",
       "nico": "00",
       "cantidad_umt_kg": 20.41,
-      "valor_usd": 350.00,
+      "valor_usd": 350.0,
       "precio_unitario_usd_kg": 17.148,
       "ampara": "UNA placa 6061-T651 lote 706332C4 colada 714",
       "pais_origen": "USA",
       "pais_exportador": "USA",
       "pais_vertido_cast": "USA",
       "principal_pais_fundicion_smelting": "CANADA",
-      "descargo_en_este_pedimento": {"partida": 2, "cantidad_umt_kg": 20.41, "valor_usd": 350.00},
-      "saldo_remanente": {"cantidad_umt_kg": 0.0, "valor_usd": 0.0}
+      "descargo_en_este_pedimento": {
+        "partida": 2,
+        "cantidad_umt_kg": 20.41,
+        "valor_usd": 350.0
+      },
+      "saldo_remanente": {
+        "cantidad_umt_kg": 0.0,
+        "valor_usd": 0.0
+      }
     }
   ],
   "partidas": [
@@ -104,56 +138,78 @@
       "fraccion": "7606.12.99",
       "nico": "00",
       "descripcion": "PLACA DE ALUMINIO ALEADO 6061-T651, SIN RECUBRIMIENTO, SIN ACABADO, SIN ACCESORIOS INTEGRADOS, DE 12 x 12 x 3 PULGADAS, 20.41 KG CADA UNA",
-      "cantidad_umc": 3, "umc": "Pieza",
-      "cantidad_umt": 61.23, "umt": "Kilogramo",
-      "valor_usd": 1050.00, "valor_aduana_mxn": 17746.89,
-      "pais_origen": "USA", "pais_vendedor": "USA",
-      "igi_tasa_pct": 30, "igi_mxn": 5324.07,
-      "permiso": {"clave": "AL", "numero": "1931AL26073388", "cant_umt": 61.23, "val_com_dls": 1050.00}
+      "cantidad_umc": 3,
+      "umc": "Pieza",
+      "cantidad_umt": 61.23,
+      "umt": "Kilogramo",
+      "valor_usd": 1050.0,
+      "valor_aduana_mxn": 17746.89,
+      "pais_origen": "USA",
+      "pais_vendedor": "USA",
+      "igi_tasa_pct": 30,
+      "igi_mxn": 5324.07,
+      "permiso": {
+        "clave": "AL",
+        "numero": "1931AL26073388",
+        "cant_umt": 61.23,
+        "val_com_dls": 1050.0
+      }
     },
     {
       "num": 2,
       "fraccion": "7606.12.99",
       "nico": "00",
       "descripcion": "PLACA DE ALUMINIO ALEADO 6061-T651, SIN RECUBRIMIENTO, SIN ACABADO, SIN ACCESORIOS INTEGRADOS, DE 12 x 12 x 3 PULGADAS, 20.41 KG, LOTE 706332C4 COLADA 714",
-      "cantidad_umc": 1, "umc": "Pieza",
-      "cantidad_umt": 20.41, "umt": "Kilogramo",
-      "valor_usd": 350.00, "valor_aduana_mxn": 5915.63,
-      "pais_origen": "USA", "pais_vendedor": "USA",
-      "igi_tasa_pct": 30, "igi_mxn": 1774.69,
-      "permiso": {"clave": "AL", "numero": "1931AL26077729", "cant_umt": 20.41, "val_com_dls": 350.00}
+      "cantidad_umc": 1,
+      "umc": "Pieza",
+      "cantidad_umt": 20.41,
+      "umt": "Kilogramo",
+      "valor_usd": 350.0,
+      "valor_aduana_mxn": 5915.63,
+      "pais_origen": "USA",
+      "pais_vendedor": "USA",
+      "igi_tasa_pct": 30,
+      "igi_mxn": 1774.69,
+      "permiso": {
+        "clave": "AL",
+        "numero": "1931AL26077729",
+        "cant_umt": 20.41,
+        "val_com_dls": 350.0
+      }
     }
   ],
   "totales": {
-    "valor_dolares": 1400.00,
+    "valor_dolares": 1400.0,
     "valor_aduana_mxn": 23662.52,
     "valor_comercial_mxn": 23662.52,
-    "incrementables_mxn": 0.00,
-    "decrementables_mxn": 0.00,
+    "incrementables_mxn": 0.0,
+    "decrementables_mxn": 0.0,
     "peso_neto_kg": 81.64,
     "peso_bruto_kg": 117.93,
     "bultos": "2 cajas / 1 tarima — confirmar contra entrada SD26089444"
   },
   "contribuciones_escenario_sin_tmec": {
-    "DTA_8_al_millar_calculado": 189.30,
-    "DTA_declarado_cuota_minima": 316.00,
+    "DTA_8_al_millar_calculado": 189.3,
+    "DTA_declarado_cuota_minima": 316.0,
     "IGI_30": 7098.76,
     "base_IVA": 31077.28,
     "IVA_16": 4972.36,
     "total_contribuciones": 12387.12,
-    "prevalidacion": 330.00,
-    "iva_prevalidacion": 52.80,
+    "prevalidacion": 330.0,
+    "iva_prevalidacion": 52.8,
     "total_efectivo_linea_captura": 12769.92
   },
   "contribuciones_escenario_con_tmec": {
-    "DTA_declarado_cuota_minima": 316.00,
-    "IGI_0": 0.00,
+    "DTA_declarado_cuota_minima": 316.0,
+    "IGI_0": 0.0,
     "base_IVA": 23978.52,
     "IVA_16": 3836.56,
     "total_contribuciones": 4152.56,
-    "prevalidacion": 330.00,
-    "iva_prevalidacion": 52.80,
+    "prevalidacion": 330.0,
+    "iva_prevalidacion": 52.8,
     "total_efectivo_linea_captura": 4535.36,
     "ahorro_vs_sin_tmec": 8234.56
-  }
+  },
+  "observaciones_pedimento": "IMPORTACION DEFINITIVA DE MERCANCIA EN BASE AL ARTICULO 96 DE LA LEY ADUANERA VIGENTE\nREFERENCIA:AFSI2654082\n\nOPERACION POR CORRESPONSALIA - CORRESPONSAL: AFS AGENCIA ADUANAL SC, RFC AAA141120UX9 - PATENTE 1941\n\nDESTINATARIO FINAL: INTERIORES AEREOS SA DE CV, BLVD LAZARO CARDENAS 2385,\nPLUTARCO ELIAS CALLES, MEXICALI BC 21376\n\nLAS MERCANCIAS AMPARADAS POR EL PRESENTE PEDIMENTO SON CUATRO PLACAS DE ALUMINIO ALEADO 6061-T651 SIN TRABAJAR, QUE SE DESPACHAN EN DEFINITIVO POR SEPARADO DEL HERRAMENTAL DEL MISMO EMBARQUE, AMPARADO POR EL PEDIMENTO 6000024 CLAVE BA DE LA MISMA PATENTE Y REFERENCIA.\n\nAVISO AUTOMATICO DE IMPORTACION DE ALUMINIO 1931AL26073388 DEL 18-08-2026, VIGENTE AL 18-12-2026, DESCARGADO EN LA PARTIDA 1 POR 61.23 KG Y 1,050.00 USD.\nAVISO AUTOMATICO DE IMPORTACION DE ALUMINIO 1931AL26077729 DEL 21-08-2026, VIGENTE AL 21-12-2026, DESCARGADO EN LA PARTIDA 2 POR 20.41 KG Y 350.00 USD.\n\nENTRADA A BODEGA SD26089444 - BAJA FORWARDING - 19-08-2026. ITN/AES X20260821641827.\n\n- - Relacion de facturas - -\nFACTR: MAZAK CORPORATION;11-2161864;<FOLIO FACTURA 1>;17-08-2026;<COVE 1>;USD;1,050.000\nFACTR: MAZAK CORPORATION;11-2161864;<FOLIO FACTURA 2>;17-08-2026;<COVE 2>;USD;350.000",
+  "precedente_captura": "Apoderado 11, empresa 43, zona 1 — conforme al pedimento 6000001 A1 de la misma patente y cliente."
 }

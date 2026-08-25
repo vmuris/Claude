@@ -1,5 +1,5 @@
-# Revisión (glosa previa) — Pedimento A1 · 1941 · MAZAK placas de aluminio
-**Ref. AFSI2654082 · corresponsalía AFS · 25-ago-2026**
+# Revisión (glosa previa) — Pedimento 6000025 · A1 · 1941 · MAZAK placas de aluminio
+**26 40 1941 6000025 · Ref. AFSI2654082 · corresponsalía AFS Agencia Aduanal · 25-ago-2026**
 
 Semáforo: 🔴 bloquea validación · 🟠 corregir antes de pagar · 🟡 verificar/documentar
 
@@ -11,8 +11,11 @@ Semáforo: 🔴 bloquea validación · 🟠 corregir antes de pagar · 🟡 veri
 F1 y F2 declaran ambas `INVOICE # CDS TEST` con fecha impresa **4/19/2024**, mientras el
 packing list dice **08/17/26**. Dos COVE distintos no pueden compartir folio de factura,
 y una factura de 2024 para mercancía arribada en agosto de 2026 es una inconsistencia que
-la autoridad puede observar (art. 36-A fr. I LA). **Pedir a AFS/Mazak facturas con folios
-distintos (p. ej. `CDS TEST-1` y `CDS TEST-2`) y fecha 17-ago-2026** antes de transmitir COVE.
+la autoridad puede observar (art. 36-A fr. I LA). Peor todavía: el pedimento **BA 6000024** del
+herramental ya declaró en su relación de facturas ese mismo folio `CDS TEST` (20-08-2026, USD
+41,826.00), así que el mismo folio quedaría en tres declaraciones distintas del mismo importador y
+proveedor. **Pedir a AFS/Mazak facturas con folios distintos (p. ej. `CDS TEST-1` y `CDS TEST-2`)
+y fecha 17-ago-2026** antes de transmitir COVE.
 
 **2. El lote 706332C4 aparece en las dos facturas.**
 El aviso 1931AL26073388 desglosa las 4 placas así: 1 pza lote **657231B7** (colada 558),
@@ -85,9 +88,9 @@ pago se hace el **25-ago-2026** (art. 20 CFF). Si el pago se recorre, recalcular
 inscrito en el sector aplicable a productos de aluminio (Anexo 10 RGCE) además del padrón
 general.
 
-**12. Tax ID del proveedor.** Falta el número de identificación fiscal de MAZAK CORPORATION
-para el pedimento y el COVE. Victor ya lo pidió el 18-ago para la operación del transformador;
-reutilizar o volver a solicitar.
+**12. Tax ID del proveedor — resuelto.** MAZAK CORPORATION tiene Tax ID **11-2161864**, ya
+declarado en los pedimentos 6000001 (A1, transformador) y 6000024 (BA, herramental) de la misma
+patente. Reutilizarlo; no hace falta pedirlo otra vez.
 
 **13. Bultos y peso bruto.** Las facturas revisadas traen dos packing lists con **1 caja cada
 uno** (210 lb y 50 lb → 117.93 kg brutos), pero la entrada SD26089444 reporta **2 tarimas**
@@ -103,6 +106,22 @@ pedimento BA con los escritos del art. 106 fr. II inciso a) y el aviso en Ventan
 **15. Manifestación de valor y transporte.** Integrar manifestación de valor + hoja de
 cálculo (art. 59 fr. III LA, regla 1.5.1) y el documento de transporte del tramo mexicano
 (transportista, caja/placas) para la DODA.
+
+**16. Número de pedimento y pool de números.** Se asigna **6000025**, primer libre del pool
+`vt_numerospedi` de la patente 1941 / aduana 400 / 2026 (fila ID 125184). Ojo: el **6000024 sigue
+en el pool** (fila ID 136168) pese a estar ya consumido por el BA del herramental — la baja manual
+quedó pendiente desde el 24-ago. Dar de baja las dos filas por la interfaz para que nadie reutilice
+un número.
+
+**17. Coherencia con el BA 6000024.** El pedimento del herramental ya dejó asentado en observaciones
+que *"las placas de aluminio 6061-T651 sin trabajar no van en este pedimento: se despachan en
+definitivo por separado (aviso automático 1931AL26073388)"*. Este pedimento cierra esa referencia
+cruzada, y sus observaciones lo dicen en sentido inverso. Ambos comparten referencia AFS
+**AFSI2654082**, así que conviene distinguirlos por clave (A1 vs BA) en cualquier reporte.
+
+**18. Fracciones en el catálogo del cliente.** En el BA quedó anotado que las fracciones no estaban
+dadas de alta en el catálogo del cliente 1104. Verificar que **7606.12.99 NICO 00** esté dada de alta
+antes de capturar las partidas.
 
 ---
 

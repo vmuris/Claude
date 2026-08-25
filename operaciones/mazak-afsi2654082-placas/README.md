@@ -1,7 +1,11 @@
 # MAZAK MÉXICO — Placas de aluminio 6061-T651 · Ref. AFSI2654082
 
-Pedimento **A1 (definitivo)**, patente **1941**, aduana **400** (Tijuana / Mesa de Otay),
-en corresponsalía con **AFS Forwarding / AFS Agencia Aduanal**.
+Pedimento **6000025** — `26 40 1941 6000025` — clave **A1 (definitivo)**, patente **1941**,
+aduana **400** (Tijuana / Mesa de Otay), corresponsal **AFS Agencia Aduanal, S.C.**
+(RFC AAA141120UX9); AFS Forwarding coordina la logística.
+
+El herramental del mismo embarque ya se despachó aparte en el pedimento **6000024 clave BA**
+(pagado 24-ago-2026, USD 41,826.00), como manda el art. 106 LA.
 
 | Archivo | Contenido |
 |---|---|
@@ -18,5 +22,3 @@ en corresponsalía con **AFS Forwarding / AFS Agencia Aduanal**.
 - **Aviso automático 2** (24-ago-2026): `AVISO AUTOMATICO ALUMINIO (MAZAK) - Nuevo OFICIO DE RESOLUCION (1).pdf` + `- Nuevo ACUSE (1).pdf` → **1931AL26077729**.
 - Entrada a bodega **SD26089444** (Baja Forwarding, 19-ago-2026).
 
-El herramental del mismo embarque **no** va en este pedimento: se despacha en pedimento
-**BA** por separado (art. 106 LA).

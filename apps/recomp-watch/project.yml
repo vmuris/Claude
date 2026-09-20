@@ -1,0 +1,91 @@
+name: Recomp
+options:
+  bundleIdPrefix: ai.compliancehub.recomp
+  createIntermediateGroups: true
+  deploymentTarget:
+    watchOS: "10.0"
+
+packages:
+  RecompCore:
+    path: Core
+
+settings:
+  base:
+    SWIFT_VERSION: "5.9"
+    MARKETING_VERSION: "1.0"
+    CURRENT_PROJECT_VERSION: "1"
+    CODE_SIGN_STYLE: Automatic
+    # Pon tu Team ID para correr en un reloj físico. HealthKit no funciona
+    # en el simulador sin datos sembrados.
+    DEVELOPMENT_TEAM: ""
+
+targets:
+
+  RecompWatch:
+    type: application
+    platform: watchOS
+    sources:
+      - Watch
+      - Salud
+      - Recursos/Assets.xcassets
+    dependencies:
+      - package: RecompCore
+      - target: RecompComplicacion
+        embed: true
+      - sdk: HealthKit.framework
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: ai.compliancehub.recomp.watchkitapp
+        PRODUCT_NAME: Recomp
+        INFOPLIST_KEY_CFBundleDisplayName: Recomp
+        GENERATE_INFOPLIST_FILE: NO
+    info:
+      path: Recursos/Info-Watch.plist
+      properties:
+        CFBundleDisplayName: Recomp
+        WKApplication: true
+        WKWatchOnly: true
+        WKRunsIndependentlyOfCompanionApp: true
+        WKBackgroundModes:
+          - workout-processing
+        NSHealthShareUsageDescription: Recomp lee tu sueño, tu energía, tus entrenamientos y tu peso para calcular el plan del día.
+        NSHealthUpdateUsageDescription: Recomp guarda en Salud lo que registras: comidas, peso y entrenamientos.
+    entitlements:
+      path: Recursos/Watch.entitlements
+      properties:
+        com.apple.developer.healthkit: true
+        com.apple.developer.healthkit.access: []
+        com.apple.security.application-groups:
+          - group.ai.compliancehub.recomp
+
+  RecompComplicacion:
+    type: app-extension
+    platform: watchOS
+    sources:
+      - Widget
+    dependencies:
+      - package: RecompCore
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: ai.compliancehub.recomp.watchkitapp.complicacion
+        PRODUCT_NAME: RecompComplicacion
+        GENERATE_INFOPLIST_FILE: NO
+    info:
+      path: Recursos/Info-Complicacion.plist
+      properties:
+        CFBundleDisplayName: Recomp
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.widgetkit-extension
+    entitlements:
+      path: Recursos/Complicacion.entitlements
+      properties:
+        com.apple.security.application-groups:
+          - group.ai.compliancehub.recomp
+
+schemes:
+  RecompWatch:
+    build:
+      targets:
+        RecompWatch: all
+    run:
+      config: Debug

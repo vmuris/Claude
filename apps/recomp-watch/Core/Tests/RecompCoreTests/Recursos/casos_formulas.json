@@ -1,0 +1,361 @@
+{
+  "objetivos": [
+    {
+      "nombre": "hombre-recomp",
+      "perfil": {
+        "sexo": "hombre",
+        "edad": 38,
+        "estaturaCm": 178,
+        "pesoKg": 92,
+        "nivel": "moderado",
+        "objetivo": "recomposicion",
+        "horasSuenoObjetivo": 7.5,
+        "metaEnergiaActiva": 500,
+        "ajusteAcumuladoKcal": 0
+      },
+      "esperado": {
+        "tmb": 1847.5,
+        "gastoEstimado": 2863.625,
+        "piso": 2032.25,
+        "energiaKcal": 2520,
+        "proteinaG": 184,
+        "grasaG": 74,
+        "carbosG": 280
+      }
+    },
+    {
+      "nombre": "mujer-perder",
+      "perfil": {
+        "sexo": "mujer",
+        "edad": 30,
+        "estaturaCm": 165,
+        "pesoKg": 70,
+        "nivel": "ligero",
+        "objetivo": "perderGrasa",
+        "horasSuenoObjetivo": 7.5,
+        "metaEnergiaActiva": 500,
+        "ajusteAcumuladoKcal": 0
+      },
+      "esperado": {
+        "tmb": 1420.25,
+        "gastoEstimado": 1952.8438,
+        "piso": 1562.275,
+        "energiaKcal": 1562,
+        "proteinaG": 154,
+        "grasaG": 56,
+        "carbosG": 111
+      }
+    },
+    {
+      "nombre": "hombre-ganar",
+      "perfil": {
+        "sexo": "hombre",
+        "edad": 25,
+        "estaturaCm": 180,
+        "pesoKg": 70,
+        "nivel": "alto",
+        "objetivo": "ganarMusculo",
+        "horasSuenoObjetivo": 7.5,
+        "metaEnergiaActiva": 500,
+        "ajusteAcumuladoKcal": 0
+      },
+      "esperado": {
+        "tmb": 1705.0,
+        "gastoEstimado": 2941.125,
+        "piso": 1875.5,
+        "energiaKcal": 3235,
+        "proteinaG": 126,
+        "grasaG": 56,
+        "carbosG": 557
+      }
+    },
+    {
+      "nombre": "mujer-sedentaria-piso",
+      "perfil": {
+        "sexo": "mujer",
+        "edad": 45,
+        "estaturaCm": 155,
+        "pesoKg": 52,
+        "nivel": "sedentario",
+        "objetivo": "perderGrasa",
+        "horasSuenoObjetivo": 7.5,
+        "metaEnergiaActiva": 500,
+        "ajusteAcumuladoKcal": 0
+      },
+      "esperado": {
+        "tmb": 1102.75,
+        "gastoEstimado": 1323.3,
+        "piso": 1213.025,
+        "energiaKcal": 1213,
+        "proteinaG": 114,
+        "grasaG": 42,
+        "carbosG": 95
+      }
+    },
+    {
+      "nombre": "hombre-con-ajuste",
+      "perfil": {
+        "sexo": "hombre",
+        "edad": 40,
+        "estaturaCm": 170,
+        "pesoKg": 85,
+        "nivel": "moderado",
+        "objetivo": "recomposicion",
+        "horasSuenoObjetivo": 7.5,
+        "metaEnergiaActiva": 500,
+        "ajusteAcumuladoKcal": -300
+      },
+      "esperado": {
+        "tmb": 1717.5,
+        "gastoEstimado": 2662.125,
+        "piso": 1889.25,
+        "energiaKcal": 2043,
+        "proteinaG": 170,
+        "grasaG": 68,
+        "carbosG": 188
+      }
+    }
+  ],
+  "puntajes": [
+    {
+      "nombre": "dia-perfecto",
+      "perfil": {
+        "sexo": "hombre",
+        "edad": 38,
+        "estaturaCm": 178,
+        "pesoKg": 92,
+        "nivel": "moderado",
+        "objetivo": "recomposicion",
+        "horasSuenoObjetivo": 7.5,
+        "metaEnergiaActiva": 500,
+        "ajusteAcumuladoKcal": 0
+      },
+      "dia": {
+        "energiaConsumida": 2520,
+        "proteinaConsumida": 184,
+        "energiaActiva": 620,
+        "energiaBasalMedida": 0,
+        "horasSueno": 8.0
+      },
+      "esperado": {
+        "energia": 30,
+        "proteina": 30,
+        "sueno": 25,
+        "movimiento": 15,
+        "total": 100
+      }
+    },
+    {
+      "nombre": "dia-sin-registro",
+      "perfil": {
+        "sexo": "hombre",
+        "edad": 38,
+        "estaturaCm": 178,
+        "pesoKg": 92,
+        "nivel": "moderado",
+        "objetivo": "recomposicion",
+        "horasSuenoObjetivo": 7.5,
+        "metaEnergiaActiva": 500,
+        "ajusteAcumuladoKcal": 0
+      },
+      "dia": {
+        "energiaConsumida": 0,
+        "proteinaConsumida": 0,
+        "energiaActiva": 300,
+        "energiaBasalMedida": 0,
+        "horasSueno": 6.9
+      },
+      "esperado": {
+        "energia": 0,
+        "proteina": 0,
+        "sueno": 15,
+        "movimiento": 8,
+        "total": 23
+      }
+    },
+    {
+      "nombre": "dia-pasado-20",
+      "perfil": {
+        "sexo": "hombre",
+        "edad": 38,
+        "estaturaCm": 178,
+        "pesoKg": 92,
+        "nivel": "moderado",
+        "objetivo": "recomposicion",
+        "horasSuenoObjetivo": 7.5,
+        "metaEnergiaActiva": 500,
+        "ajusteAcumuladoKcal": 0
+      },
+      "dia": {
+        "energiaConsumida": 2973.6,
+        "proteinaConsumida": 169.28,
+        "energiaActiva": 320,
+        "energiaBasalMedida": 0,
+        "horasSueno": 6.6
+      },
+      "esperado": {
+        "energia": 15,
+        "proteina": 20,
+        "sueno": 15,
+        "movimiento": 8,
+        "total": 58
+      }
+    },
+    {
+      "nombre": "dia-sin-dormir",
+      "perfil": {
+        "sexo": "hombre",
+        "edad": 38,
+        "estaturaCm": 178,
+        "pesoKg": 92,
+        "nivel": "moderado",
+        "objetivo": "recomposicion",
+        "horasSuenoObjetivo": 7.5,
+        "metaEnergiaActiva": 500,
+        "ajusteAcumuladoKcal": 0
+      },
+      "dia": {
+        "energiaConsumida": 2394.0,
+        "proteinaConsumida": 147.20000000000002,
+        "energiaActiva": 120,
+        "energiaBasalMedida": 0,
+        "horasSueno": 4.0
+      },
+      "esperado": {
+        "energia": 30,
+        "proteina": 10,
+        "sueno": 0,
+        "movimiento": 0,
+        "total": 40
+      }
+    }
+  ],
+  "ajustes": [
+    {
+      "nombre": "pocos-dias",
+      "perfil": {
+        "sexo": "hombre",
+        "edad": 35,
+        "estaturaCm": 175,
+        "pesoKg": 80,
+        "nivel": "moderado",
+        "objetivo": "recomposicion",
+        "horasSuenoObjetivo": 7.5,
+        "metaEnergiaActiva": 500,
+        "ajusteAcumuladoKcal": 0
+      },
+      "tendencia": {
+        "pesoInicialKg": 92.0,
+        "pesoFinalKg": 91.0,
+        "dias": 3
+      },
+      "cambioSemanalPorcentaje": -2.536232,
+      "esperado": 0
+    },
+    {
+      "nombre": "estancado",
+      "perfil": {
+        "sexo": "hombre",
+        "edad": 35,
+        "estaturaCm": 175,
+        "pesoKg": 80,
+        "nivel": "moderado",
+        "objetivo": "recomposicion",
+        "horasSuenoObjetivo": 7.5,
+        "metaEnergiaActiva": 500,
+        "ajusteAcumuladoKcal": 0
+      },
+      "tendencia": {
+        "pesoInicialKg": 92.0,
+        "pesoFinalKg": 92.0,
+        "dias": 14
+      },
+      "cambioSemanalPorcentaje": 0.0,
+      "esperado": -150
+    },
+    {
+      "nombre": "en-rango",
+      "perfil": {
+        "sexo": "hombre",
+        "edad": 35,
+        "estaturaCm": 175,
+        "pesoKg": 80,
+        "nivel": "moderado",
+        "objetivo": "recomposicion",
+        "horasSuenoObjetivo": 7.5,
+        "metaEnergiaActiva": 500,
+        "ajusteAcumuladoKcal": 0
+      },
+      "tendencia": {
+        "pesoInicialKg": 92.0,
+        "pesoFinalKg": 91.54,
+        "dias": 7
+      },
+      "cambioSemanalPorcentaje": -0.5,
+      "esperado": 0
+    },
+    {
+      "nombre": "muy-rapido",
+      "perfil": {
+        "sexo": "hombre",
+        "edad": 35,
+        "estaturaCm": 175,
+        "pesoKg": 80,
+        "nivel": "moderado",
+        "objetivo": "recomposicion",
+        "horasSuenoObjetivo": 7.5,
+        "metaEnergiaActiva": 500,
+        "ajusteAcumuladoKcal": 0
+      },
+      "tendencia": {
+        "pesoInicialKg": 92.0,
+        "pesoFinalKg": 90.8,
+        "dias": 7
+      },
+      "cambioSemanalPorcentaje": -1.304348,
+      "esperado": 150
+    },
+    {
+      "nombre": "tope-alcanzado",
+      "perfil": {
+        "sexo": "hombre",
+        "edad": 35,
+        "estaturaCm": 175,
+        "pesoKg": 80,
+        "nivel": "moderado",
+        "objetivo": "recomposicion",
+        "horasSuenoObjetivo": 7.5,
+        "metaEnergiaActiva": 500,
+        "ajusteAcumuladoKcal": -450
+      },
+      "tendencia": {
+        "pesoInicialKg": 92.0,
+        "pesoFinalKg": 92.2,
+        "dias": 14
+      },
+      "cambioSemanalPorcentaje": 0.108696,
+      "esperado": -50
+    },
+    {
+      "nombre": "ganar-lento",
+      "perfil": {
+        "sexo": "hombre",
+        "edad": 35,
+        "estaturaCm": 175,
+        "pesoKg": 80,
+        "nivel": "moderado",
+        "objetivo": "ganarMusculo",
+        "horasSuenoObjetivo": 7.5,
+        "metaEnergiaActiva": 500,
+        "ajusteAcumuladoKcal": 0
+      },
+      "tendencia": {
+        "pesoInicialKg": 70.0,
+        "pesoFinalKg": 70.02,
+        "dias": 7
+      },
+      "cambioSemanalPorcentaje": 0.028571,
+      "esperado": 150
+    }
+  ]
+}

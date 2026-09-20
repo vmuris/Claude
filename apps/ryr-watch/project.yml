@@ -1,0 +1,125 @@
+name: RyROperativo
+options:
+  bundleIdPrefix: ai.compliancehub.ryr
+  createIntermediateGroups: true
+  deploymentTarget:
+    watchOS: "10.0"
+    iOS: "17.0"
+
+packages:
+  RyRCore:
+    path: Core
+
+settings:
+  base:
+    SWIFT_VERSION: "5.9"
+    MARKETING_VERSION: "1.0"
+    CURRENT_PROJECT_VERSION: "1"
+    CODE_SIGN_STYLE: Automatic
+    ENABLE_USER_SCRIPT_SANDBOXING: YES
+    # Pon aquí tu Team ID para correr en reloj físico.
+    DEVELOPMENT_TEAM: ""
+
+targets:
+
+  RyROperativoWatch:
+    type: application
+    platform: watchOS
+    sources:
+      - Watch
+      - Compartido
+      - Recursos/Assets.xcassets
+    dependencies:
+      - package: RyRCore
+      - target: RyRComplicacion
+        embed: true
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: ai.compliancehub.ryr.operativo.watchkitapp
+        PRODUCT_NAME: RyR Operativo
+        INFOPLIST_KEY_CFBundleDisplayName: RyR
+        GENERATE_INFOPLIST_FILE: NO
+    info:
+      path: Recursos/Info-Watch.plist
+      properties:
+        CFBundleDisplayName: RyR
+        WKApplication: true
+        WKWatchOnly: false
+        WKCompanionAppBundleIdentifier: ai.compliancehub.ryr.operativo
+        WKRunsIndependentlyOfCompanionApp: true
+        NSAppTransportSecurity:
+          NSAllowsLocalNetworking: true
+    entitlements:
+      path: Recursos/Watch.entitlements
+      properties:
+        com.apple.security.application-groups:
+          - group.ai.compliancehub.ryr.operativo
+
+  RyRComplicacion:
+    type: app-extension
+    platform: watchOS
+    sources:
+      - Widget
+    dependencies:
+      - package: RyRCore
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: ai.compliancehub.ryr.operativo.watchkitapp.complicacion
+        PRODUCT_NAME: RyRComplicacion
+        GENERATE_INFOPLIST_FILE: NO
+    info:
+      path: Recursos/Info-Complicacion.plist
+      properties:
+        CFBundleDisplayName: RyR
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.widgetkit-extension
+    entitlements:
+      path: Recursos/Complicacion.entitlements
+      properties:
+        com.apple.security.application-groups:
+          - group.ai.compliancehub.ryr.operativo
+
+  RyROperativoiPhone:
+    type: application
+    platform: iOS
+    sources:
+      - iOS
+      - Compartido
+      - Recursos/Assets.xcassets
+    dependencies:
+      - package: RyRCore
+      - target: RyROperativoWatch
+        embed: true
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: ai.compliancehub.ryr.operativo
+        PRODUCT_NAME: RyR Operativo
+        GENERATE_INFOPLIST_FILE: NO
+    info:
+      path: Recursos/Info-iOS.plist
+      properties:
+        CFBundleDisplayName: RyR
+        UILaunchScreen: {}
+        UISupportedInterfaceOrientations:
+          - UIInterfaceOrientationPortrait
+        NSAppTransportSecurity:
+          NSAllowsLocalNetworking: true
+    entitlements:
+      path: Recursos/iOS.entitlements
+      properties:
+        com.apple.security.application-groups:
+          - group.ai.compliancehub.ryr.operativo
+
+schemes:
+  RyROperativoWatch:
+    build:
+      targets:
+        RyROperativoWatch: all
+    run:
+      config: Debug
+  RyROperativoiPhone:
+    build:
+      targets:
+        RyROperativoiPhone: all
+    run:
+      config: Debug

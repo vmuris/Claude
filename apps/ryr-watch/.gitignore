@@ -1,0 +1,6 @@
+RyROperativo.xcodeproj/
+build/
+DerivedData/
+Core/.build/
+*.xcuserdatad
+.DS_Store

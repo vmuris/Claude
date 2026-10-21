@@ -1,0 +1,9 @@
+{
+  "name": "ryr-exportacion",
+  "version": "0.1.0",
+  "description": "Reglas de captura y validación previa de pedimentos de exportación A1 en Darwin (RyR Servicios Aduanales).",
+  "author": {
+    "name": "vmuris"
+  },
+  "keywords": ["aduanas", "exportacion", "pedimento", "darwin", "cfdi", "padron-sectorial"]
+}
